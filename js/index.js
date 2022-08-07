@@ -5,6 +5,7 @@ import Events from "./eventsCards.js"
 import EventsButton from "./eventsButton.js"
 const {
     buttonPlay,
+    buttonPlay2,
     buttonStop,
     buttonPlus,
     buttonMinus,
@@ -38,6 +39,7 @@ Events({
 
 EventsButton({
     buttonPlay,
+    buttonPlay2,
     buttonStop,
     buttonPlus,
     buttonMinus,

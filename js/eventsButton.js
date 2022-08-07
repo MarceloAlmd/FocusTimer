@@ -1,5 +1,6 @@
 export default function ({
     buttonPlay,
+    buttonPlay2,
     buttonStop,
     buttonPlus,
     buttonMinus,
@@ -11,11 +12,18 @@ export default function ({
 
 
     buttonPlay.addEventListener('click', function(){
+        buttonPlay.classList.add('hide')
+        buttonPlay2.classList.remove('hide')
         timer.countDown()
         sound.buttonPressAudio.play()
     })
+    buttonPlay2.onclick = () => {
+        sound.buttonPressAudio.play()
+    }
 
     buttonStop.addEventListener('click', function (){
+        buttonPlay.classList.remove('hide')
+        buttonPlay2.classList.add('hide')
         timer.paused()
         sound.buttonPressAudio.play()
     })

@@ -75,6 +75,9 @@ main #controls button svg:hover{
 .pathColor {
     fill: white;
 }
+.hide{
+    display: none;
+}
 
 @media (max-width: 330px){
     main{
