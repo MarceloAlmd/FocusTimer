@@ -9,48 +9,84 @@ export default function ({
     fireOff,
     sound
 }) {
-    florestOn.addEventListener('click', function(){
+
+    function ChangeClassListFlorestOn(){
         florestOn.classList.add('hide')
         florestOff.classList.remove('hide')
         sound.florest.play()
-    })
-    florestOff.addEventListener('click', function(){
+    }
+
+    function ChangeClassListFlorestOff(){
         florestOff.classList.add('hide')
         florestOn.classList.remove('hide')
         sound.florest.pause()
-    })
-    
-    rainOn.addEventListener('click', function(){
+    }
+
+    function ChangeClassListRainOn(){
         rainOn.classList.add('hide')
         rainOff.classList.remove('hide')
         sound.rain.play()
-    })
-    rainOff.addEventListener('click', function(){
+    }
+
+    function ChangeClassListRainOff(){
         rainOff.classList.add('hide')
         rainOn.classList.remove('hide')
         sound.rain.pause()
-    })
-    
-    shopOn.addEventListener('click', function(){
+    }
+
+    function ChangeClassListShopOn(){
         shopOn.classList.add('hide')
         shopOff.classList.remove('hide')
         sound.shop.play()
-    })
-    shopOff.addEventListener('click', function(){
+    }
+
+    function ChangeClassListShopOff(){
         shopOff.classList.add('hide')
         shopOn.classList.remove('hide')
         sound.shop.pause()
-    })
-    
-    fireOn.addEventListener('click', function(){
+    }
+
+    function ChangeClassListFireOn(){
         fireOn.classList.add('hide')
         fireOff.classList.remove('hide')
         sound.fire.play()
-    })
-    fireOff.addEventListener('click', function(){
+    }
+
+    function ChangeClassListFireOff(){
         fireOn.classList.remove('hide')
         fireOff.classList.add('hide')
         sound.fire.pause()
+    }
+
+    
+
+
+    florestOn.addEventListener('click', function(){
+        ChangeClassListFlorestOn()
+    })
+    florestOff.addEventListener('click', function(){
+      ChangeClassListFlorestOff()
+    })
+    
+    rainOn.addEventListener('click', function(){
+        ChangeClassListRainOn()
+    })
+    rainOff.addEventListener('click', function(){
+        ChangeClassListRainOff()
+    })
+    
+    shopOn.addEventListener('click', function(){
+        ChangeClassListShopOn()
+    })
+    shopOff.addEventListener('click', function(){
+        ChangeClassListShopOff()
+    })
+    
+    fireOn.addEventListener('click', function(){
+        ChangeClassListFireOn()
+    })
+    fireOff.addEventListener('click', function(){
+        ChangeClassListFireOff()
     })
     
 }

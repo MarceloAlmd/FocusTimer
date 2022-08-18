@@ -1,3 +1,5 @@
+
+
 export default function () {
     const florest = new Audio("sounds/Floresta.wav")
     const rain = new Audio("sounds/Chuva.wav")
@@ -11,6 +13,15 @@ export default function () {
     const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true")
 
     const kitchenTimer = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
+    
+
+    
+    function timerEnd(){
+        florest.pause()
+        rain.pause()
+        shop.pause()
+        fire.pause()
+    }
 
     return {
         florest,
@@ -18,7 +29,8 @@ export default function () {
         shop,
         fire,
         buttonPressAudio,
-        kitchenTimer
+        kitchenTimer,
+        timerEnd
     }
 
 }

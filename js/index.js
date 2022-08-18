@@ -21,10 +21,15 @@ const {
     fireOff,
     timerOut
 } = elements
-
-
 const sound = Sound()
-const timer = Timer({secondsDisplay, minutesDisplay, timerOut, sound})
+
+const timer = Timer({secondsDisplay, 
+    minutesDisplay, 
+    timerOut, 
+    sound,
+    florestOn,
+    florestOff
+})
 Events({
     florestOn,
     florestOff,
@@ -34,7 +39,8 @@ Events({
     shopOff,
     fireOn,
     fireOff,
-    sound
+    sound,
+    event
 })
 
 EventsButton({
